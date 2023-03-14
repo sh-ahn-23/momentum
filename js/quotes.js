@@ -39,7 +39,7 @@ const quotes = [
     quote: "♫ 벚꽃 엔딩 ♫",
     author: "버스커 버스커(Busker Busker)"
   }
-]
+];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
