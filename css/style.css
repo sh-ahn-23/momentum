@@ -1,3 +1,126 @@
 .hidden {
   display: none;
 }
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+}
+
+#clock {
+  position: relative;
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+#greeting {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+#login-form {
+  width: 12rem;
+  height: 3rem;
+}
+
+#login-form input {
+  height: inherit;
+  text-align: center;
+  font-size: 3rem;
+  background-color: transparent;
+  border-bottom-style: 2px solid gray;
+}
+
+#todo-form {
+  width: 15rem;
+  height: 1.5rem;
+  margin: 1rem auto;
+}
+
+#todo-form input {
+  width: inherit;
+  height: inherit;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  text-align: center;
+}
+
+#todo-list {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#todo-list li {
+  margin-bottom: 0.5rem;
+}
+
+#todo-list button {
+  position: relative;
+  bottom: 0.2rem;
+  width: 1.2rem;
+  hegith: 1.2rem;
+  margin-left: 0.5rem;
+  border-radius: 10%;
+  background-color: white;
+  padding: 0.2rem;
+  color: gray;
+}
+
+#quote {
+  width: inherit;
+  position: absolute;
+  bottom: 0.5rem;
+  text-align: center;
+}
+
+#quote div {
+  margin-top: 0.2rem;
+}
+
+#weather {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  text-align: right;
+}
+
+#weather div {
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  #clock {
+    font-size: 6rem;
+  }
+  #login-form {
+    height: 2rem;
+  }
+  #login-form input, #greeting {
+    font-size: 2rem;
+  }
+}
